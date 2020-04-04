@@ -159,7 +159,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 
 
 
-		      -- 3.2) LoadDFNB3_as
+		      -- 3.2) LoadDFNB3_rg
 
     DELETE FROM dbo.[SSIS Configurations]
      WHERE ConfigurationFilter = 'LoadDFNB3_rg';
@@ -179,7 +179,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
          , 'String'
           );
 
-		   -- 3.3) LoadEXM_as
+		   -- 3.3) LoadEXM_rg
 
     DELETE FROM dbo.[SSIS Configurations]
      WHERE ConfigurationFilter = 'LoadEXM_rg';
