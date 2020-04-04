@@ -140,7 +140,8 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 
     DELETE FROM dbo.[SSIS Configurations]
      WHERE ConfigurationFilter = 'SSIS_PDS_Template';
-	
+	 
+
 
 	-- 3.1.1) v_data_share_root
 
@@ -159,7 +160,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 		      -- 3.2) LoadDFNB3_as
 
     DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'LoadDFNB3_as';
+     WHERE ConfigurationFilter = 'LoadDFNB3_rg';
 	
 
 	-- 3.2.1) v_data_share_root
@@ -170,7 +171,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
                                         , ConfiguredValueType)
     VALUES
           (
-           'LoadDFNB3_as'
+           'LoadDFNB3_rg'
 		 , 'C:\repos\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
@@ -179,7 +180,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
 		   -- 3.3) LoadEXM_as
 
     DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'LoadEXM_as';
+     WHERE ConfigurationFilter = 'LoadEXM_rg';
 	
 
 	-- 3.3.1) v_data_share_root
@@ -190,7 +191,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
                                         , ConfiguredValueType)
     VALUES
           (
-           'LoadEXM_as'
+           'LoadEXM_rg'
 		 , 'C:\repos\EXM\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
