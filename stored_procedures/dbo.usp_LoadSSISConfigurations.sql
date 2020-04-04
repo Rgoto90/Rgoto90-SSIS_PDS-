@@ -26,10 +26,10 @@ PURPOSE: Load the SSIS Configurations table
 MODIFICATION LOG:
 Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
-1.0      11/03/2019  ASILVEIRA         1. Created this process for LDS BC IT243
-1.1      11/09/2019  ASILVEIRA         1. Added conn_DFNB3 connection configuration
-1.2      03/28/2020  ASILVEIRA         1. Added LoadDFNB3_as Configuration
-1.3      04/02/2020  ASILVEIRA         1. Added LoadEXM_as Configuration
+1.0      04/01/2020  Rodrigo Goto 1. Created this process for LDS BC IT243
+1.1      04/01/2020  Rodrigo Goto 1. Added conn_DFNB3 connection configuration
+1.2      04/03/2020  Rodrigo Goto 1. Added LoadDFNB3_as Configuration
+1.3      04/03/2020  Rodrigo Goto 1. Added LoadEXM_as Configuration
 
 
 
@@ -67,7 +67,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
     VALUES
           (
            'CommonConfigurations'
-         , 'Data Source=localhost;Initial Catalog=EXM;Provider=SQLNCLI11;Integrated Security=SSPI;'
+         , 'Data Source=LAPTOP-6LBM68DT\MSSQLSERVER01;Initial Catalog=EXM;Provider=SQLNCLI11;Integrated Security=SSPI;'
          , '\Package.Variables[User::conn_EXM].Properties[Value]'
          , 'String'
           );
@@ -82,7 +82,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
     VALUES
           (
            'CommonConfigurations'
-         , 'Data Source=localhost;Initial Catalog=DFNB3;Provider=SQLNCLI11;Integrated Security=SSPI;'
+         , 'Data Source=LAPTOP-6LBM68DT\MSSQLSERVER01;Initial Catalog=DFNB3;Provider=SQLNCLI11;Integrated Security=SSPI;'
          , '\Package.Variables[User::conn_DFNB3].Properties[Value]'
          , 'String'
           );
@@ -97,7 +97,7 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
     VALUES
           (
            'CommonConfigurations'
-         , 'Data Source=localhost;Initial Catalog=SSIS_PDS;Provider=SQLNCLI11;Integrated Security=SSPI;'
+         , 'Data Source=LAPTOP-6LBM68DT\MSSQLSERVER01;Initial Catalog=SSIS_PDS;Provider=SQLNCLI11;Integrated Security=SSPI;'
          , '\Package.Variables[User::conn_SSIS_PDS].Properties[Value]'
          , 'String'
           );
