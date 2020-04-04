@@ -28,8 +28,8 @@ Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
 1.0      04/01/2020  Rodrigo Goto 1. Created this process for LDS BC IT243
 1.1      04/01/2020  Rodrigo Goto 1. Added conn_DFNB3 connection configuration
-1.2      04/03/2020  Rodrigo Goto 1. Added LoadDFNB3_as Configuration
-1.3      04/03/2020  Rodrigo Goto 1. Added LoadEXM_as Configuration
+1.2      04/03/2020  Rodrigo Goto 1. Added LoadDFNB3_rg Configuration
+1.3      04/03/2020  Rodrigo Goto 1. Added LoadEXM_rg Configuration
 
 
 
@@ -156,6 +156,8 @@ Connect strings are loaded with passwords to allow for automation of SSIS ETL ba
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
+
+
 
 		      -- 3.2) LoadDFNB3_as
 
